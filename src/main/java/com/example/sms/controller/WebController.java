@@ -17,14 +17,9 @@ public class WebController {
     @Autowired
     EmailService service;
 
-    @RequestMapping(value="/welcome1", method = RequestMethod.GET)
+    @RequestMapping(value="/welcome", method = RequestMethod.GET)
     ModelAndView welcome() {
-        return new ModelAndView("index");
-    }
-
-    @RequestMapping(value="/welcome2")
-    ModelAndView welcome2() {
-       return new ModelAndView("index1");
+        return new ModelAndView("sms");
     }
 
     @RequestMapping(value="/send")
