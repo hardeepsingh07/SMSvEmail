@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="index-jq.js"></script>
+</head>
+<body>
+<div class="container">
+    <label>Mobile Number</label>
+    <input id="number" type="text" placeholder="Valid Number"/>
+    <br>
+    <label>Service Provider</label>
+    <select class="form-control" id="selection">
+        <option>AT&T</option>
+        <option>Boost Mobile</option>
+        <option>Sprint</option>
+        <option>T-Mobile</option>
+        <option>Verizon</option>
+        <option>Virgin Mobile</option>
+    </select>
+    <br>
+    <label>Subject</label>
+    <input id="subject" type="text" placeholder="Optional"/>
+    <br>
+    <label>Message</label>
+    <input id="message" type="text" placeholder="Required"/>
+    <button id="send" onclick="sendEmail()">Send!</button>
+</div>
+</body>
+</html>
